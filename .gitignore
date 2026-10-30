@@ -1,0 +1,39 @@
+*.bak
+*.bak*
+*.backup
+*.backup*
+*.old
+*.save
+*.before-*
+*.broken
+*backup*/
+*.tmp
+*.swp
+*.swo
+*~
+.cache/
+logs/
+session/
+recently-used.xbel
+*.log
+.env
+.env.*
+*.pem
+*.key
+*token*
+*password*
+credentials*
+secrets*
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Editors
+.idea/

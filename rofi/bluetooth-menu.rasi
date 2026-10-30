@@ -1,0 +1,65 @@
+* {
+    bg:       #1e1e2e;
+    bg-alt:   #313244;
+    fg:       #cdd6f4;
+    accent:   #89b4fa;
+    urgent:   #f38ba8;
+    background-color: @bg;
+    text-color: @fg;
+    font: "Noto Sans 11";
+}
+
+window {
+    width: 480px;
+    border: 2px;
+    border-color: @accent;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+mainbox {
+    spacing: 12px;
+    children: [ "inputbar", "message", "listview" ];
+}
+
+inputbar {
+    padding: 10px;
+    background-color: @bg-alt;
+    border-radius: 8px;
+    children: [ "prompt", "entry" ];
+}
+
+prompt {
+    text-color: @accent;
+    padding: 0 8px 0 0;
+}
+
+entry {
+    placeholder: "Buscar dispositivos Bluetooth...";
+    placeholder-color: #6c7086;
+}
+
+message {
+    padding: 6px;
+}
+
+listview {
+    lines: 8;
+    scrollbar: false;
+    spacing: 5px;
+}
+
+element {
+    padding: 9px;
+    border-radius: 7px;
+}
+
+element selected {
+    background-color: @accent;
+    text-color: @bg;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+}
